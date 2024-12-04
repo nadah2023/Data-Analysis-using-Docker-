@@ -9,49 +9,53 @@ The main goals of this project are to apply a K-Means model in a Docker containe
 
 ## Setup Instructions
 1. Clone the repository to your local machine.
-2. Navigate to the project directory name as (bd-a1). (mkdir bd-a1) and your dataset(curl -o bd-a1/titanic.csv https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv)
-3. Build the Docker image:
+2. Navigate to the project directory name as (bd-a1).
+ ```bash
+   mkdir bd-a1
+```
+3. and your dataset    ```bash curl -o bd-a1/titanic.csv https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv  ```
+4. Build the Docker image:
     ```bash
     docker build -t bd-a1-image .
     ```
-4. Run the Docker container:
+5. Run the Docker container:
     ```bash
     docker run -it --name bd-a1-container bd-a1-image
     ```
-5. Now inside the container i make directory name /home/doc-bd-a1/ 
+6. Now inside the container i make directory name /home/doc-bd-a1/ 
     ```bash
     cd  /home/doc-bd-a1/
     ```
-6. First , I do the python file 
+7. First , I do the python file 
    ```bash
    touch load.py dpre.py eda.py model.py vis.py
    ```
-7. Second, I go to each file by using  nano command such as 
+8. Second, I go to each file by using  nano command such as 
    ```bash
    nano load.py
    ```
-8. Third , I write in each file the python code when the bash open 
-9. Fourth , I run each file by using 
+9. Third , I write in each file the python code when the bash open 
+10. Fourth , I run each file by using 
    ```bash
    python3 <File name> </path/to/dataset>
    ```
-10. End , After i run the all files I use this command to list for me the files inside this directory 
+11. End , After i run the all files I use this command to list for me the files inside this directory 
     ```bash
     ls
     ```
-11. This command for get out of the directory 
+12. This command for get out of the directory 
     ```bash
     cd ..
     ```
-12. Exit the contanier by using 
+13. Exit the contanier by using 
      ```bash
     exit
     ```
-13. The command to start the container after exit it 
+14. The command to start the container after exit it 
     ```bash
     docker start -i bd-a1-container 
     ```
-14. To run the bash script file using this command to get the output files from the contanier to local machine
+15. To run the bash script file using this command to get the output files from the contanier to local machine
      ```bash
     bash final.sh
     ### another one
