@@ -13,7 +13,10 @@ The main goals of this project are to apply a K-Means model in a Docker containe
  ```bash
    mkdir bd-a1
 ```
-3. and your dataset    ```bash curl -o bd-a1/titanic.csv https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv  ```
+3. and your dataset 
+   ```bash 
+curl -o bd-a1/titanic.csv https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv 
+    ```
 4. Build the Docker image:
     ```bash
     docker build -t bd-a1-image .
