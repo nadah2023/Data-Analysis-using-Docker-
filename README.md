@@ -9,7 +9,7 @@ The main goals of this project are to apply a K-Means model in a Docker containe
 
 ## Setup Instructions
 1. Clone the repository to your local machine.
-2. Navigate to the project directory name as (bd-a1).
+2. Navigate to the project directory name as (bd-a1). (mkdir bd-a1) and your dataset(curl -o bd-a1/titanic.csv https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv)
 3. Build the Docker image:
     ```bash
     docker build -t bd-a1-image .
